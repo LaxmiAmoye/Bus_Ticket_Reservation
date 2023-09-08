@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<title>Search page</title>
+<style type="text/css">
+.btn-search{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+}
+</style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="card shadow-lg">
+			<div class="card-header">
+				<p class="h3">Book Your Ticket</p>
+			</div>
+			<div class="card-body">
+				<form action="search" method="post">
+                	<div class="mb-2">
+    	                <label for="source">From</label>
+	                    <select id="source" name="source" class="form-control" required>
+        	                <option selected>Choose From</option>
+                            <option value="Hyderabad" name="Hyderabad">Hyderabad</option>                                            
+                            <option value="Banglore" name="Banglore">Banglore</option>
+                            <option value="Chennai" name="Chennai">Chennai</option>
+                            <option value="New Delhi" name="New Delhi">New Delhi</option>                                                   
+                        </select>
+                   </div>
+                   <div class="mb-2">
+						<label for="destination">To</label>
+                   	    <select id="destination" name="destination" class="form-control" required>
+                	        <option selected>Choose To</option>
+                            <option value="Hyderabad" name="Hyderabad">Hyderabad</option>                                           
+                            <option value="Banglore" name="Banglore">Banglore</option>
+                            <option value="Chennai" name="Chennai">Chennai</option>
+                            <option value="New Delhi" name="New Delhi">New Delhi</option>                                                                                     
+                        </select>
+                   </div>                                
+                   <div class="mb-2">
+                   		<label for="day">Day of Journey</label>
+                        <select id="day" name="day" class="form-control" required>
+                	        <option value="mon" name="mon" selected>mon</option>
+                            <option value="Tue" name="Tue">Tue</option>                                           
+                            <option value="Wed" name="Wed">Wed</option>
+                            <option value="Thu" name="Thu">Thu</option>
+                            <option value="Fri" name="Fri">Fri</option>
+                            <option value="Sat" name="Sat">Sat</option>
+                            <option value="Sun" name="Sun">Sun</option>                                                                                   
+                        </select>
+                   </div>
+                   <div class="mb-2">
+                        <input type="submit" class="form-control bg-danger btn-search" value="Search">
+                   </div>
+                 </form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+<title>Online Bus Ticket</title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Calibri, sans-serif;
+}
+.landing-page{
+    background-image: url(./images/landing_page_bus-avif.avif);
+    background-size: cover;
+    height: 100vh;
+}
+.landing-page .homepage{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.homepage .logo{
+    color: rgb(202, 18, 18);
+    font-family: Rock Salt;
+}
+a{
+    text-decoration: none;
+}
+.collapse .nav-item .top-links{
+    color: white;
+}
+.collapse .nav-item .top-links:hover{
+    color: black;
+    background-color: rgb(51, 171, 171);
+    border-radius: 70%;
+}
+.homepage-text{
+	padding-top: 100px;
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+}
+.homepage-para{ 
+    color: white;
+    font-family: cursive;
+    font-size: 9px;
+}
+.homepage-tag{ 
+    color: red;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 48px;
+}
+.main-footer{
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+	<!-- Landing Page -->
+    <section class="landing-page" id="landing-page">
+        <div class="homepage">
+            <!-- nav bar -->
+            <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand"><h3 class="logo">EpicBus<i class="bi bi-bus-front-fill"></i></h3></a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav d-flex ms-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link top-links">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about-us" class="nav-link top-links">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.jsp" class="nav-link top-links">
+                                    <i class="bi bi-lock-fill"></i>Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="register.jsp" class="nav-link top-links">
+                                    <i class="bi bi-person-add"></i>Register</a>
+                            </li>                            
+                        </ul>                        
+                    </div>
+                </div>
+            </nav>
+            <!-- Home page body -->
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-center align-items-center">                    
+                    <div class="col-sm-12">
+                        <p class="homepage-text text-center">No matter where in the world you want to go, we can help get you there.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-sm-8"> 
+                        <p class="homepage-para text-center">Tourism helps explain the beauty, art, history, and culture of our country. 
+                        Different people visiting any country take beautiful cultural concepts along with them and spread 
+                        those concepts to others while visiting other places in the world.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">                    
+                    <div class="col-sm-12">
+                        <p class="homepage-tag text-center">Simplify your Journey with EPIC Bus</p>
+                    </div>
+                </div>           
+            </div>
+        </div>  
+    </section>
+    <section>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-header m-3 p-3 bg-transparent">
+                            <p class="h4">PATNERED WITH</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/apsrtc.avif" alt="APSRTC-logo">
+                                    <p class="text-center">APSRTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/tsrtc.avif" alt="TSRTC-logo">
+                                    <p class="text-center">TSRTC</p>
+                                </div> 
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/gsrtc.avif" alt="GSRTC-logo">
+                                    <p class="text-center">GSRTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid w-100 h-75" src="images/hrtc.avif" alt="HRTC-logo">
+                                    <p class="text-center">HRTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/Kerala-RTC.avif" alt="Kerala-RTC-logo">
+                                    <p class="text-center">Kerala-RTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/msrtc.avif" alt="MSRTC-logo">
+                                    <p class="text-center">MSRTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/osrtc.avif" alt="OSRTC-logo">
+                                    <p class="text-center">OSRTC</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-fluid" src="images/Pepsu-prtc.avif" alt="PRTC-logo">
+                                    <p class="text-center">PRTC</p>
+                                </div>                                               
+                            </div>                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container mt-5 border border-info shadow-lg">
+            <p class="h3 text-danger">ABOUT US</p>
+            <div class="aboutus-h1">
+                <p class="h4">Book your Bus Ticket at Lowest Price</p>
+                <p>With EpicBus, travellers can book bus tickets online at the lowest ticket fares. 
+                    Travellers prefer to choose their favorite bus to reserve online bus booking. 
+                    You’re at the right place to find a wide range of Private buses and SRTC 
+                    (State Road Transport Corporation) buses are available for bus booking online 
+                    on EpicBus.</p>
+                <p>You will find below various types of buses available to book bus tickets 
+                    on EpicBus at lowest fare bus ticket booking:</p>
+                <ul>
+                    <li>AC Buses</li>
+                    <li>Non AC Buses</li>
+                    <li>Ordinary Buses</li>
+                    <li>Mini Buses</li>
+                    <li>Volvo AC Buses</li>
+                    <li>Deluxe Buses</li>
+                    <li>Sleeper Buses</li>
+                    <li>Electric Buses</li>
+                    <li>Express Buses</li>
+                </ul>
+            </div>
+            <div class="aboutus-h1">
+                <p class="h4">Benefits of Booking Bus Tickets Online</p>
+                <p>In this day and age of technology, offline modes of bus ticket booking are no more 
+                    a preference. Online ticket booking is easy, fast and hassle-free. EpicBus tickets 
+                    off all three with our easy app and website navigation.</p>
+                <p>Here's listing all the benefits of booking bus tickets online on EpicBus:</p>
+                    <ul>
+                        <li>Avoid standing in long queues at offline bus ticket counters.</li>
+                        <li>No more hassle of approaching travel agents.</li>
+                        <li>Choose from multiple bus services.</li>
+                        <li>Book both Private and SRTC bus tickets online.</li>
+                        <li>Check bus ticket availability online.</li>
+                        <li>Get bus timings, ticket price, boarding and dropping point details online.</li>
+                        <li>Access to payment partner discounts and cash back offers.</li>
+                        <li>Free cancellation feature.</li>
+                        <li>Each and every transaction is simple, safe and secure.</li>                    
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="main-footer bg-black text-light">
+        <p>All Rights Reserved</p>
+        <p>Developed and Maintained by 
+            <a href="https://github.com/LaxmiAmoye" target="_blank">BhagyaLaxmi</a>
+        </p>
+        <p class="d-flex justify-content-sm-evenly">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-github"></i>
+        </p>
+    </footer>
+</body>
+</html>
